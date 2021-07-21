@@ -1,13 +1,115 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(204, 43%, 93%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10% 25% 8% 25%;
+}
+.head {
+  grid-column: span 2;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 3% 6% 5% 6%;
+}
+.join {
+  font-family: "Karla", sans-serif;
+  color: hsl(179, 62%, 43%);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.guarant {
+  font-family: "Karla", sans-serif;
+  color: hsl(71, 73%, 54%);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.gain {
+  font-family: "Karla", sans-serif;
+  color: hsl(218, 22%, 67%);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.foot1 {
+  background-color: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 10px;
+  padding: 5% 8% 8% 8%;
+}
+.foot2 {
+  background-color: hsl(179, 62%, 43%, 60%);
+  border-bottom-right-radius: 10px;
+  padding: 5% 8% 8% 8%;
+}
+.monthly {
+  color: white;
+  opacity: 0.8;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+}
+.per {
+  color: rgba(255, 255, 255, 0.486);
+
+  font-family: "Karla", sans-serif;
+  font-size: 0.7rem;
+  font-weight: light;
+  text-align: left;
+}
+.dollar {
+  color: white;
+  opacity: 1;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.access {
+  color: rgba(255, 255, 255, 0.486);
+
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+}
+.btn {
+  width: 100%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  border-radius: 5px;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  color: white;
+
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  box-shadow: 0px 4px 5px 3px rgba(65, 64, 64, 0.568);
+}
+.info {
+  display: block;
+  color: white;
+  opacity: 0.8;
+  font-family: "Karla", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.3rem;
+}
+@media (min-width: 370px) and (max-width: 990px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10% 5% 8% 5%;
+  }
+  .head {
+    grid-column: span 1;
+  }
+  .foot1 {
+    border-bottom-left-radius: 0;
+  }
+  .foot2 {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }
